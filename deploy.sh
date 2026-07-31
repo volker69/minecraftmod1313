@@ -6,7 +6,7 @@ REPO_DIR="/home/volker/minecraftmod1313/mods"
 MINECRAFT_DIR="/var/opt/minecraft/crafty/crafty-4/servers/7834d600-e5ff-4fe2-b44a-bb8569b3ca8d"
 BRANCH="main"
 LOG_FILE="/var/log/minecraft-deploy.log"
-
+export GIT_SSH_COMMAND="ssh -i /root/.ssh/id_ed25519 -o IdentitiesOnly=yes"
 {
     echo "========================================"
     echo "Comprobando cambios: $(date)"
